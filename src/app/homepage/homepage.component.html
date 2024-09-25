@@ -1,0 +1,18 @@
+<p>Slike slatkih maca:</p>
+<div class="image-row">
+    <div *ngFor="let imageUrl of imageUrls" class="image-item">
+      <img [src]="imageUrl" alt="Cat Image" class="loadedImage">
+    </div>
+</div>
+
+<p>Snimajte svoju preslatku macu!</p>
+<app-camera></app-camera>
+<div>
+  <button (click)="triggerSync()">Trigger Background Sync</button>
+</div>
+
+<div>
+  <button class="button button-primary" (click)="subscribeToNotifications()">
+    Subscribe
+  </button>
+</div>

@@ -1,0 +1,15 @@
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+  }
+  
+  .image-item {
+    flex: 1 0 0; 
+  }
+  
+  .loadedImage {
+    width: 100%;
+    height: auto;
+  }
+  
